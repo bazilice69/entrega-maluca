@@ -186,3 +186,75 @@ h1 span { color: var(--orange); }
   .delivery-status { align-self: end; }
   .mobile-controls { align-self: start; }
 }
+
+.secondary-button {
+  border-color: #455f8b;
+  color: var(--cream);
+  background: #283b60;
+}
+
+.garage-overlay {
+  overflow-y: auto;
+  justify-content: flex-start;
+  padding-top: 26px;
+}
+
+.garage-box {
+  width: 100%;
+  padding: 15px 11px;
+  border: 4px solid var(--cream);
+  background: var(--ink);
+  box-shadow: 5px 5px 0 #090d18;
+}
+
+.garage-box h2 { margin: 6px 0 12px; color: var(--yellow); font-size: clamp(20px, 6vw, 28px); }
+.garage-kicker { margin: 0; color: var(--mint); font-size: 8px; }
+.bank-balance { margin: 0 0 12px; color: #bcd0e8; font-size: 8px; line-height: 1.75; }
+.bank-balance strong, .bank-total strong { color: var(--yellow); }
+.bank-total { color: var(--mint) !important; }
+
+.moto-list { display: grid; gap: 9px; }
+.moto-card {
+  display: grid;
+  grid-template-columns: 55px 1fr;
+  align-items: center;
+  gap: 9px;
+  padding: 9px;
+  border: 3px solid #536d94;
+  color: var(--cream);
+  background: #24324a;
+  text-align: left;
+}
+.moto-card.selected { border-color: var(--yellow); background: #344b68; }
+.moto-preview {
+  position: relative;
+  width: 52px;
+  height: 34px;
+  background: #152035;
+}
+.moto-preview::before, .moto-preview::after {
+  position: absolute;
+  bottom: 2px;
+  width: 11px;
+  height: 13px;
+  background: #0c111d;
+  content: '';
+}
+.moto-preview::before { left: 5px; }
+.moto-preview::after { right: 5px; }
+.moto-preview .bike-body { position: absolute; left: 10px; bottom: 11px; width: 31px; height: 11px; background: var(--bike-color); box-shadow: 4px -5px 0 var(--bike-accent); }
+.moto-preview .box { position: absolute; left: 5px; bottom: 20px; width: 13px; height: 11px; background: #dd8a37; }
+.moto-info { min-width: 0; }
+.moto-name { display: block; color: var(--cream); font-size: 9px; line-height: 1.5; }
+.moto-detail { display: block; margin-top: 4px; color: #9eb8db; font-size: 7px; line-height: 1.55; }
+.moto-action {
+  grid-column: 1 / -1;
+  width: 100%;
+  padding: 9px 6px 7px;
+  border: 2px solid #8f431f;
+  color: #40200f;
+  background: var(--orange);
+  font-size: 8px;
+}
+.moto-action.equipped { border-color: #347b5b; color: #d9ffe8; background: #27674d; }
+.moto-action:disabled { cursor: default; }

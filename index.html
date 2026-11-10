@@ -35,14 +35,26 @@
           <small>Use ← → ou A D</small>
         </div>
         <button id="startButton" class="pixel-button" type="button">COMEÇAR</button>
+        <button id="garageButton" class="pixel-button secondary-button" type="button">MOTOS</button>
+      </div>
+
+      <div id="garageScreen" class="overlay garage-overlay" aria-hidden="true">
+        <div class="garage-box">
+          <p class="garage-kicker">SUA GARAGEM</p>
+          <h2>MOTOS</h2>
+          <p class="bank-balance">MOEDAS GUARDADAS: <strong id="bankValue">000</strong></p>
+          <div id="motoList" class="moto-list" aria-live="polite"></div>
+        </div>
+        <button id="backToMenuButton" class="pixel-button secondary-button" type="button">VOLTAR</button>
       </div>
 
       <div id="gameOverScreen" class="overlay" aria-hidden="true">
         <div class="game-over-box">
           <p class="warning">MOTO QUEBROU!</p>
           <h2>FIM DE CORRIDA</h2>
-          <p>Você fez <strong id="finalScore">0</strong> moedas</p>
+          <p>Você ganhou <strong id="finalScore">0</strong> moedas</p>
           <p><strong id="finalDeliveries">0</strong> entregas concluídas</p>
+          <p class="bank-total">Cofre: <strong id="finalBankValue">0</strong> moedas</p>
         </div>
         <button id="restartButton" class="pixel-button" type="button">TENTAR DE NOVO</button>
       </div>
