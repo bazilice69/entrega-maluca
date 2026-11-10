@@ -18,6 +18,7 @@
       <div class="hud" aria-live="polite">
         <div class="hud-card"><span>MOEDAS</span><strong id="scoreValue">000</strong></div>
         <div class="hud-card center"><span>ENTREGAS</span><strong id="deliveriesValue">00</strong></div>
+        <div class="hud-card center"><span>GASOLINA</span><strong id="fuelValue">100%</strong></div>
         <div class="hud-card right"><span>MOTO</span><strong id="livesValue">♥♥♥</strong></div>
       </div>
 
@@ -50,7 +51,7 @@
 
       <div id="gameOverScreen" class="overlay" aria-hidden="true">
         <div class="game-over-box">
-          <p class="warning">MOTO QUEBROU!</p>
+          <p id="gameOverWarning" class="warning">MOTO QUEBROU!</p>
           <h2>FIM DE CORRIDA</h2>
           <p>Você ganhou <strong id="finalScore">0</strong> moedas</p>
           <p><strong id="finalDeliveries">0</strong> entregas concluídas</p>
@@ -67,6 +68,7 @@
 
     <nav class="mobile-controls" aria-label="Controles do jogo">
       <button class="control-button" data-direction="left" type="button" aria-label="Virar à esquerda">←</button>
+      <button class="control-button brake" data-direction="brake" type="button" aria-label="Parar a moto">PARAR</button>
       <button class="control-button accelerate" data-direction="boost" type="button" aria-label="Acelerar">⚡</button>
       <button class="control-button" data-direction="right" type="button" aria-label="Virar à direita">→</button>
     </nav>
