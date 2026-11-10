@@ -260,3 +260,14 @@ h1 span { color: var(--orange); }
 .moto-action:disabled { cursor: default; }
 
 .control-button.brake { color: #fff0e1; border-color: #9a3c40; background: #8e3038; font-size: 17px; }
+
+.team-badge {
+  display: inline-block;
+  margin: 0 0 13px !important;
+  padding: 7px 6px 5px;
+  border: 2px solid var(--mint);
+  color: var(--mint) !important;
+  background: #112c31;
+  font-size: clamp(7px, 1.8vw, 9px) !important;
+  line-height: 1.45 !important;
+}
